@@ -1,0 +1,80 @@
+﻿<Window x:Class="FootballApp.Player_Results"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FootballApp"
+        mc:Ignorable="d"
+        Title="Results" Height="450" Width="800" Background="LightSkyBlue" >
+    <Grid>
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+
+        <Button x:Name="Back" Content="Categories" Grid.Column="0" Foreground="Black" FontSize="10"  FontStyle="Italic"
+                Width="50" HorizontalAlignment="Left" Click="CAT_Click"
+                Grid.Row="0" Grid.ColumnSpan="2"  Background="LightSkyBlue"  />
+
+
+
+
+        <TextBlock x:Name="Textbox1NameTeam" Grid.Column="2" Grid.Row="1" FontSize="20"
+               Foreground="OrangeRed"  TextAlignment="Center"    />
+        
+        <TextBlock x:Name="Textbox1Yards" Grid.Column="2" Grid.Row="2" FontSize="20"
+               Foreground="OrangeRed"  TextAlignment="Center"     />
+        
+        <TextBlock x:Name="Textbox1Touchdowns" Grid.Column="2" Grid.Row="3" FontSize="20"
+               Foreground="OrangeRed"  TextAlignment="Center"     />
+
+        <TextBlock x:Name="Textbox2NameTeam" Grid.Column="3" Grid.Row="1" FontSize="20" 
+               Foreground="OrangeRed"  TextAlignment="Center"     />
+
+        <TextBlock x:Name="Textbox2Yards" Grid.Column="3" Grid.Row="2" FontSize="20" 
+               Foreground="OrangeRed"  TextAlignment="Center"     />
+
+        <TextBlock x:Name="Textbox2Touchdowns" Grid.Column="3" Grid.Row="3" FontSize="20" 
+               Foreground="OrangeRed" TextAlignment="Center"      />
+
+
+
+
+        <TextBlock Text="Name(Team)" Grid.Column="1" Grid.Row="1" FontSize="20"
+                    Grid.ColumnSpan="1"
+               Foreground="Maroon"      />
+        <TextBlock Text="Yards" Grid.Column="1" Grid.Row="2" FontSize="20"
+                    Grid.ColumnSpan="3"
+               Foreground="Maroon"      />
+        <TextBlock Text="Touchdowns" Grid.Column="1" Grid.Row="3" FontSize="20"
+                    Grid.ColumnSpan="3"
+               Foreground="Maroon"      />
+
+
+        <Rectangle Grid.Column="1" Grid.Row="1" Stroke="Maroon" Fill="Transparent"/>
+        <Rectangle Grid.Column="1" Grid.Row="2" Stroke="Maroon" Fill="Transparent"/>
+        <Rectangle Grid.Column="1" Grid.Row="3" Stroke="Maroon" Fill="Transparent"/>
+        <Rectangle Grid.Column="2" Grid.Row="1" Stroke="Maroon" Fill="Transparent"/>
+        <Rectangle Grid.Column="2" Grid.Row="2" Stroke="Maroon" Fill="Transparent"/>
+        <Rectangle Grid.Column="2" Grid.Row="3" Stroke="Maroon" Fill="Transparent"/>
+        <Rectangle Grid.Column="3" Grid.Row="1" Stroke="Maroon" Fill="Transparent"/>
+        <Rectangle Grid.Column="3" Grid.Row="2" Stroke="Maroon" Fill="Transparent"/>
+        <Rectangle Grid.Column="3" Grid.Row="3" Stroke="Maroon" Fill="Transparent"/>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,87 @@
+﻿<Window x:Class="FootballApp.Players"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FootballApp"
+        mc:Ignorable="d"
+        Title="Players" Height="300" Width="600">
+    <Grid Background="LightSkyBlue">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="Compare" Content="Compare" Grid.Column="2" Foreground="Black" FontSize="30" FontStyle="Italic"
+                Grid.Row="3" Grid.ColumnSpan="1" Margin="10" Click="Compare_Click" Background="LightGray"  />
+
+        <Button x:Name="Back" Content="GO BACK" Grid.Column="0" Foreground="Black" FontSize="10"  FontStyle="Italic"
+                Width="50" HorizontalAlignment="Left" Click="Back_Click"
+                Grid.Row="0" Grid.ColumnSpan="2"  Background="LightSkyBlue"  />
+        
+        
+
+        <ComboBox x:Name="Player1" Background="RoyalBlue"   Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Margin="5,10" SelectionChanged="Player1_SelectionChanged">
+            
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                
+
+                    <StackPanel Orientation="Horizontal" >
+                        <Image Source="C:\Users\Malik\Downloads\FootballApp-master\FootballApp-master\Project_Pictures\national_football_league.png" Height="20" Width="20"/>
+                        <TextBlock Text="{Binding PlayerName}"/>
+                        <TextBlock Text=" "/>
+                        <TextBlock Text="{Binding PlayerTeam}"/>
+                      
+                    </StackPanel>
+
+
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+        <ComboBox x:Name="Player2"  Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="1" Margin="5,10" SelectionChanged="Player2_SelectionChanged" Foreground="DarkRed">
+            
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    
+
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="C:\Users\Malik\Downloads\FootballApp-master\FootballApp-master\Project_Pictures\national_football_league.png" Height="20" Width="20"/>
+                        <TextBlock Text="{Binding PlayerName}"/>
+                        <TextBlock Text=" "/>
+                        <TextBlock Text="{Binding PlayerTeam}"/>
+                    </StackPanel>
+
+
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        
+        
+
+
+        <TextBlock Grid.Column="1" Grid.Row="2" FontSize="20"
+                   Text = "Player 1" Grid.ColumnSpan="1"
+                   TextAlignment="Center" />
+
+        <TextBlock Grid.Column="3" Grid.Row="2" FontSize="20"
+                   Text = "Player 2" Grid.ColumnSpan="1"
+                   TextAlignment="Center" />
+
+        
+        
+    </Grid>
+</Window>
