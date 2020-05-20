@@ -36,11 +36,11 @@
         <Button x:Name="WR" Content="WideReceivers" Grid.Column="4" Background="WhiteSmoke"
                 Grid.Row="5" Grid.ColumnSpan="2" Margin="10" Click="WR_Click"  />
 
-        <Image Grid.Row="1" Grid.Column="1" Grid.RowSpan="3" Source="Downloads\NFLApp_Update2020-master\NFLApp_Update2020-master\Project_Pictures\Wilson.png" 
+        <Image Grid.Row="1" Grid.Column="1" Grid.RowSpan="3" Source="C:\Users\Malik\Downloads\FootballApp-master\FootballApp-master\Project_Pictures\Wilson.png" 
                Margin="10" Grid.ColumnSpan="1"/>
-        <Image Grid.Row="1" Grid.Column="2" Grid.RowSpan="3" Source="Downloads\NFLApp_Update2020-master\NFLApp_Update2020-master\Project_Pictures\Dwill2.png"
+        <Image Grid.Row="1" Grid.Column="2" Grid.RowSpan="3" Source="C:\Users\Malik\Downloads\FootballApp-master\FootballApp-master\Project_Pictures\Dwill2.png"
                Margin="10" Grid.ColumnSpan="2"/>
-        <Image Grid.Row="1" Grid.Column="4" Grid.RowSpan="3" Source="Downloads\NFLApp_Update2020-master\NFLApp_Update2020-master\Project_Pictures\julio.png" 
+        <Image Grid.Row="1" Grid.Column="4" Grid.RowSpan="3" Source="C:\Users\Malik\Downloads\FootballApp-master\FootballApp-master\Project_Pictures\julio.png" 
                Margin="10,0"  Grid.ColumnSpan="2"/>
 
 

@@ -40,7 +40,7 @@
                 
 
                     <StackPanel Orientation="Horizontal" >
-                        <Image Source="Downloads\NFLApp_Update2020-master\NFLApp_Update2020-master\Project_Pictures\national_football_league.png" Height="20" Width="20"/>
+                        <Image Source="C:\Users\Malik\Downloads\FootballApp-master\FootballApp-master\Project_Pictures\national_football_league.png" Height="20" Width="20"/>
                         <TextBlock Text="{Binding PlayerName}"/>
                         <TextBlock Text=" "/>
                         <TextBlock Text="{Binding PlayerTeam}"/>
@@ -59,7 +59,7 @@
                     
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Downloads\NFLApp_Update2020-master\NFLApp_Update2020-master\Project_Pictures\national_football_league.png" Height="20" Width="20"/>
+                        <Image Source="C:\Users\Malik\Downloads\FootballApp-master\FootballApp-master\Project_Pictures\national_football_league.png" Height="20" Width="20"/>
                         <TextBlock Text="{Binding PlayerName}"/>
                         <TextBlock Text=" "/>
                         <TextBlock Text="{Binding PlayerTeam}"/>

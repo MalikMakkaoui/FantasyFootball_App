@@ -37,7 +37,7 @@
         <Button x:Name="KICKOFF" Foreground="White" Background="SlateBlue" Content="KICKOFF" Grid.Column="3" Grid.Row="5" Grid.ColumnSpan="2" Margin="10" Click="KICKOFF_Click"  />
 
 
-        <Image Grid.Row="4" Grid.Column="3" Grid.RowSpan="1" Source="Downloads\NFLApp_Update2020-master\NFLApp_Update2020-master\Project_Pictures\national_football_league.png" Height="200" Width="300" Grid.ColumnSpan="2"/>
+        <Image Grid.Row="4" Grid.Column="3" Grid.RowSpan="1" Source="C:\Users\Malik\Downloads\FootballApp-master\FootballApp-master\Project_Pictures\national_football_league.png" Height="200" Width="300" Grid.ColumnSpan="2"/>
 
 
        <!-- C:\Project_Pictures\national_football_league.png -->
